@@ -1,0 +1,14 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import StudentForm from "../../components/students/StudentForm.jsx";
+import StudentTable from "../../components/students/StudentTable.jsx";
+---
+
+<Layout title="Estudiantes">
+  <section class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Gestión de Estudiantes</h1>
+
+    <StudentForm client:load onStudentCreated={() => window.location.reload()} />
+    <StudentTable client:load />
+  </section>
+</Layout>
