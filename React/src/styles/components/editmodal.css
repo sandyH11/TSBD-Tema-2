@@ -1,2 +1,0 @@
-.modal-backdrop-custom{ position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(2,6,23,0.45); z-index:9999; }
-.modal-dialog-custom{ width:680px; max-width:96%; border-radius:10px; }
